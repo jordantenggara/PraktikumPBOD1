@@ -2,7 +2,7 @@
 Nama File : Garis.java
 Deskripsi : berisi atribut dan method dalam class Garis
 Pembuat : Jordan Tenggara
-Tanggal : 03 Maret 2026
+Tanggal : 02 Maret 2026
 */
 
 public class Garis {

@@ -2,7 +2,7 @@
 Nama File : MTitik.java
 Deskripsi : berisi atribut dan method dalam class Titik
 Pembuat : Jordan Tenggara 
-Tanggal : 24 Februari 2026
+Tanggal : 02 Maret 2026
  */
 public class MTitik {
     public static void main(String[] args){

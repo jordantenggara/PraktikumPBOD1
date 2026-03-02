@@ -2,7 +2,7 @@
 Nama File : GMain.java
 Deskripsi : main class untuk menguji class Garis
 Pembuat : Jordan Tenggara
-Tanggal : 03 Maret 2026
+Tanggal : 02 Maret 2026
 */
 
 public class GMain {
