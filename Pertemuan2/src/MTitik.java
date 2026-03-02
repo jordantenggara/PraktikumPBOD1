@@ -25,6 +25,32 @@ public class MTitik {
         System.out.println("Jumlah Objek Titik = " + Titik.getCounterTitik());
         System.out.println("Jumlah Objek Titik = " + T4.getCounterTitik());
 
-        System.out.println(T2.getKuadran());
+        System.out.println("Letak kuadran titik T2 = " + T2.getKuadran());
+
+        Titik T5 = new Titik(); 
+        T5.setAbsis(6); 
+        T5.setOrdinat(8); 
+        T5.PrintTitik(); 
+
+        System.out.println("Jarak T5 ke pusat = " + T5.getJarakPusat());
+
+        Titik T6 = new Titik(); 
+        T6.setAbsis(2); 
+        T6.setOrdinat(1); 
+        T6.PrintTitik(); 
+
+        System.out.println("Jarak T5 ke T6 = " + T5.getJarak(T6));
+
+        T5.refleksiX(); 
+        T5.PrintTitik(); 
+        
+        T6.refleksiY(); 
+        T6.PrintTitik(); 
+        
+        Titik T7 = T5.getRefleksiX(); 
+        T7.PrintTitik(); 
+        
+        Titik T8 = T6.getRefleksiY(); 
+        T8.PrintTitik(); 
     }
 }

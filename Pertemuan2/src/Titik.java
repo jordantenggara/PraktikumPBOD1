@@ -23,7 +23,7 @@ public class Titik{
         return counterTitik;
     }
 
-    Titik(int x, int y){
+    Titik(double x, double y){
         this.absis = x;
         this.ordinat = y;
         counterTitik++;
@@ -55,6 +55,7 @@ public class Titik{
         ordinat = ordinat + y;
     }
 
+    //mengembalikan letak kuadran titik
     int getKuadran(){
         if (absis > 0 && ordinat > 0){
             return 1;
@@ -76,6 +77,44 @@ public class Titik{
 
     void printCounterTitik(){
         System.out.println(counterTitik);
+    }
+
+    //mengembalikan jarak titik ke pusat (0,0)
+    double getJarakPusat(){
+        return Math.sqrt((absis * absis) + (ordinat * ordinat));
+    }
+
+    //mengembalikan jarak antara titik ini dengan titik T
+    double getJarak(Titik T){
+        double dx = absis - T.getAbsis();
+        double dy = ordinat - T.getOrdinat();
+        return Math.sqrt((dx * dx) + (dy * dy));
+    }
+
+    //merefleksikan titik terhadap sumbu X (ordinat berubah tanda)
+    void refleksiX(){
+        ordinat = ordinat * -1;
+    }
+
+    //merefleksikan titik terhadap sumbu Y (absis berubah tanda)
+    void refleksiY(){
+        absis = absis * -1;
+    }
+
+    //mengembalikan titik hasil refleksi terhadap sumbu X
+    Titik getRefleksiX(){
+        Titik T = new Titik();
+        T.setAbsis(absis);
+        T.setOrdinat(ordinat * -1);
+        return T;
+    }
+
+    //mengembalikan titik hasil refleksi terhadap sumbu Y
+    Titik getRefleksiY(){
+        Titik T = new Titik();
+        T.setAbsis(absis * -1);
+        T.setOrdinat(ordinat);
+        return T;
     }
 } //end class titik
 
