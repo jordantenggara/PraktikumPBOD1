@@ -6,7 +6,7 @@ public class Mahasiswa {
     private String Nama;
     private String Prodi;
     private ArrayList<MataKuliah> listMatKul;
-    private Dosen dosenWali;
+    private DosenP4 dosenWali;
     private Kendaraan kendaraan;
 
     /***************METHOD***************/
@@ -63,7 +63,7 @@ public class Mahasiswa {
         Prodi = x;
     }
 
-    public void setDosenWali(Dosen x){
+    public void setDosenWali(DosenP4 x){
         dosenWali = x;
     }
 

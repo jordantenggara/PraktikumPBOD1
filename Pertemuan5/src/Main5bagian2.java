@@ -6,13 +6,13 @@ public class Main5bagian2 {
         BangunDatar5 L1 = new Lingkaran5(7, "a", "a");
         Lingkaran5 L2 = new Lingkaran5(14, "a", "a");
 
-        // cek luas
-        System.out.println("P1 vs P2 (luas): " + P1.isEqualLuas(P2));
-        System.out.println("P2 vs L1 (luas): " + P2.isEqualLuas(L1));
+        // // cek luas
+        // System.out.println("P1 vs P2 (luas): " + P1.isEqualLuas(P2));
+        // System.out.println("P2 vs L1 (luas): " + P2.isEqualLuas(L1));
 
-        // cek keliling
-        System.out.println("L1 vs L2 (keliling): " + L1.isEqualKeliling(L2));
-        System.out.println("P1 vs L1 (keliling): " + P1.isEqualKeliling(L1));
+        // // cek keliling
+        // System.out.println("L1 vs L2 (keliling): " + L1.isEqualKeliling(L2));
+        // System.out.println("P1 vs L1 (keliling): " + P1.isEqualKeliling(L1));
     
     
         Persegi5 p = new Persegi5(10, "b", "b");
@@ -45,6 +45,12 @@ public class Main5bagian2 {
         System.out.println("\nSetelah zoom custom");
         System.out.println("Luas Persegi: " + p.getLuas());
         System.out.println("Luas Lingkaran: " + l.getLuas());
+
+
+
+
+        System.out.println(P2.isEqualLuas(L2));
+        
     }
 
 // Apakah method yang dibuat pada langkah nomor 4 dapat digunakan untuk membandingkan objek bangun datar yang berbeda?
@@ -58,6 +64,12 @@ public class Main5bagian2 {
 
 // Apakah keuntungan saat method zoomIn(), zoomOut(), dan zoom() dikemas dalam interface IResize dibanding dijadikan sebagai abstract method dalam class BangunDatar? 
 // bisa digunakan karena implements sekaligus extend, tidak bisa double extend  
+
+
+    
+
+
+
 
 
 }

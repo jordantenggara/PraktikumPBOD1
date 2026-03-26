@@ -27,13 +27,13 @@ public class Lingkaran5 extends BangunDatar5 implements IResize{
         this.jari = jari;
     }
 
-    public double getLuas(){
-        return 3.14 * jari * jari;
-    }
+    // public double getLuas(){
+    //     return 3.14 * jari * jari;
+    // }
 
-    public double getKeliling(){
-        return 2 * 3.14 * jari;
-    }
+    // public double getKeliling(){
+    //     return 2 * 3.14 * jari;
+    // }
 
     @Override
     public void zoomIn(){
@@ -48,6 +48,16 @@ public class Lingkaran5 extends BangunDatar5 implements IResize{
     @Override
     public void zoom(int percent){
         jari = jari * percent/100;
+    }
+
+
+
+    public double getLuas(){
+        return 3.14 * jari * jari;
+    }
+
+    public double getKeliling(){
+        return 2 * 3.14 * jari;
     }
 
     

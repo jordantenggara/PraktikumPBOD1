@@ -4,7 +4,7 @@ Deskripsi : berisi atribut dan method dalam class BangunDatar5
 Pembuat : Jordan Tenggara 
 Tanggal : 17 Maret 2026
  */
-public abstract class BangunDatar5 {
+public class BangunDatar5 {
     /***************ATRIBUT***************/
     protected int jmlSisi;
     protected String warna;
@@ -57,9 +57,22 @@ public abstract class BangunDatar5 {
         System.out.println("Jumlah Objek Bangun Datar: " + counterBangunDatar);
     }
 
-    public abstract double getLuas();
+    // public abstract double getLuas();
+
+    // public abstract double getKeliling();
+
+    // public boolean isEqualLuas(BangunDatar5 X){
+    //     return this.getLuas() == X.getLuas();
+    // }
+
+    // public boolean isEqualKeliling(BangunDatar5 X){
+    //     return this.getKeliling() == X.getKeliling();
+    // }
+
 
     public abstract double getKeliling();
+
+    public abstract double getLuas();
 
     public boolean isEqualLuas(BangunDatar5 X){
         return this.getLuas() == X.getLuas();
@@ -68,4 +81,21 @@ public abstract class BangunDatar5 {
     public boolean isEqualKeliling(BangunDatar5 X){
         return this.getKeliling() == X.getKeliling();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
 }

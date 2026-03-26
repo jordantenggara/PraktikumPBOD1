@@ -2,7 +2,7 @@ public class MMahasiswa {
     public static void main(String[] args) {
 
         // buat dosen wali
-        Dosen d1 = new Dosen("D001", "Pak Budi", "Informatika");
+        DosenP4 d1 = new DosenP4("D001", "Pak Budi", "Informatika");
 
         // buat kendaraan
         Kendaraan k1 = new Kendaraan("Motor", "B 1234 CD");

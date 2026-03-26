@@ -36,8 +36,8 @@ public class Dosen {
         return Prodi;
     }
 
-    public String setNIM(String iNIP){
-        return NIP = iNIP;
+    public void setNIM(String iNIP){
+        NIP = iNIP;
     }
 
     public void setNama(String iNama){

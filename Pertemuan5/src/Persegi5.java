@@ -57,13 +57,13 @@ public class Persegi5 extends BangunDatar5 implements IResize{
         System.out.println("Sisi: " + sisi);
     }
 
-    public double getLuas(){
-        return sisi * sisi;
-    }
+    // public double getLuas(){
+    //     return sisi * sisi;
+    // }
 
-    public double getKeliling(){
-        return sisi * 4;
-    }
+    // public double getKeliling(){
+    //     return sisi * 4;
+    // }
 
     public double getDiagonal(){
         return Math.sqrt(2 * sisi * sisi);
@@ -84,4 +84,13 @@ public class Persegi5 extends BangunDatar5 implements IResize{
         sisi = sisi * percent/100;
     }
     
+
+
+    public double getLuas(){
+        return sisi * sisi;
+    }
+
+    public double getKeliling(){
+        return sisi * 4;
+    }
 }
